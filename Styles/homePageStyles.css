@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  color: rgb(109, 12, 12);
+}
+/* Styling header section */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  background: rgba(232, 6, 6, 0.8);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+/* Styling Logo */
+.logo img {
+  height: 50px;
+}
+/* Styling Navigation Bar */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+/* Styling Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  background: rgb(25 157 72 / 50%);
+}
+.hero h1 {
+  font-size: 50px;
+}
+/* Styling Buttons */
+.cta-button {
+  padding: 15px 30px;
+  background: #9f5151;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.cta-button:hover {
+  background: #ff2020;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-container {
+      flex-direction: column;
+  }
+  
+  .about-text, .about-image {
+      text-align: center;
+  }
+}
+/* Styling Footers */
+footer {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 20px;
+  text-align: center;
+  color: rgb(242, 7, 7)
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  .hero h1 {
+    font-size: 30px;
+  }
+  .cta-button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  .about {
+    padding: 20px;
+  }
+}
